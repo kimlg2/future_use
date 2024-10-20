@@ -1,6 +1,9 @@
-void main() {
+Future<void> main() async{
  // print(getData());
- getData().then((value) => print(value));
+ // getData().then((value) => print(value));
+
+ await getData();
+
  print('Hello');
 }
 Future<String> getData()  async{
