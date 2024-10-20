@@ -1,9 +1,10 @@
 void main() {
- print(getData());
-
+ // print(getData());
+ getData().then((value) => print(value));
+ print('Hello');
 }
+Future<String> getData()  async{
 
-String getData() {
-
+ await Future.delayed(Duration(seconds: 1));
  return 'hello';
 }
