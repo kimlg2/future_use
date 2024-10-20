@@ -2,9 +2,9 @@ Future<void> main() async{
  // print(getData());
  // getData().then((value) => print(value));
 
- await getData();
+ final result = await getData();
 
- print('Hello');
+ print('Hello: $result');
 }
 Future<String> getData()  async{
 
